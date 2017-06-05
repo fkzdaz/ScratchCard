@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.kz.scratchcard.view.rubble.MyView
+            xmlns:lotter="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lottery_myview"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            lotter:lotter_height="60dp"
+            lotter:lotter_widget="180dp"/>
+
+        <com.example.kz.scratchcard.view.Text_Rubbler
+            android:id="@+id/rubbler"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.kz.scratchcard.view.ScrapeView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
